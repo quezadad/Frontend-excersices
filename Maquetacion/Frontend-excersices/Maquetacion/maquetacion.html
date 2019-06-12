@@ -1,0 +1,254 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        * {
+           margin: 0;
+           font-family: Helvetica;
+        }
+
+        #hd{
+            background-color: #25426B;
+            width: 100%;
+            height: 114px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #hd > img { 
+            margin: 10px auto;
+        }
+
+        h2 {
+            text-align: center;
+            color:#25426B;
+            font-weight: lighter;
+            font-size: 60px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        body {
+            background-image: url("imagenes/background.png");
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            -webkit-tap-highlight-color: transparent;
+            text-size-adjust: 100%;
+        }
+
+        header {
+            min-height: 120px;
+        }
+
+        footer {
+            position: absolute;
+            width: 100%;
+            margin-top: 125px;
+        }
+
+        main {
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            flex: 1 0 auto;
+        }
+
+        .content #divtittle {
+           color: #484A52;
+           text-align: center;
+           font-size: 26;
+        
+        }
+
+        hr {
+            width: 80%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .content #first {
+            color: #484A52;
+            text-align: center;
+            font-size: 16;
+            padding: 2%
+        }
+
+        .content #second {
+            color:#484A52;
+            text-align: center;
+            font-size: 16px;    
+        }
+
+        .content #phone {
+            color: #484A52;
+            font-size: 17px;     
+        }
+
+        .content #phone2 {
+            color:#888888;
+            font-size: 14px;
+        }
+
+
+        .content {
+            background-color: #FFFFFF;
+            width: 637px;
+            height: 400px;
+            margin: auto;
+            box-shadow: 0px 2px 10px  #888888;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            flex-direction: column;
+        }
+
+        .foot {
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 150px;
+            bottom: 0;
+            border-top: 3px solid #888888;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        #aspire {
+            display:block;
+            margin: 10px auto;  
+        }
+
+        .column {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content #mp {
+            display: flex;
+            justify-content: space-around; 
+            margin-top: 20px;
+        }
+
+        #phoneimg {
+            height: 24px;
+            width: 24px;
+            padding: 10px;
+        }
+
+        #mailimg {
+            height: 24px;
+            width: 24px; 
+            padding: 10px;
+        }
+
+        .phones {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 767px) {
+            .content{
+                width: 100%;
+                height: auto;
+            }
+
+            #hd {
+                height: 60px;
+            }
+
+            #hd > img,
+            .foot > img {
+                height: 40px;
+            }
+
+            h2 {
+                margin-top: 0;
+                font-size: 40px;
+            }
+
+            .content #mp {
+                flex-wrap: wrap;
+           }
+
+            .column {
+                width: 100%;
+                justify-content: center;    
+            }
+
+        
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div id="hd">
+            <img src="imagenes/header.png" />
+        </div>
+     </header>
+   
+    <main>
+        <h2>We´re making improvements</h2>
+    
+    
+        <div class="content">
+            <h1 id="divtittle">The ASPIRE website will be back and<br>
+                better than ever on Januray 21 at 6 a.m.
+            </h1>
+            <hr>
+            <p id="first">Check back to explore new features and practice- <br>
+                building tools!
+            </p>
+            <p id="second">If you need immediate assistance, contact ASPIRE <br>
+                customer service at
+            </p>
+            
+            <div id="mp">
+                <div class="column">
+                    <img src="imagenes/mail.png" id="mailimg" />
+                    <p id="mail"> aspire@galderma.com </p>
+                </div>
+                <div class="column">
+                     <img src="imagenes/phone.png" id="phoneimg"/>
+                     <div class="phones">
+                        <p id="phone"> 1-844-5-ASPIRE</p>
+                        <p id="phone2"> 1-844-527-7473</p> 
+                    </div>
+                </div>
+            </div>
+
+                     
+            
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+        <img src="imagenes/footer.png" id="aspire"/>
+        <p> &copy; Galderma Laboratories, L.P. All trademarks are the property of their respective owners.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
