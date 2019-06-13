@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+ 
+    <style>
+
+        *{
+            margin:0px;
+            padding:0px;
+            
+        }
+
+        .content {
+            width: 1048px;
+            height: 800px;
+            background-color: darkgrey;
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        .box {
+            width: 300px;
+            height: 300px;
+            line-height: 100px;
+            color: black;
+            font-size: 3em;
+            text-align: center;
+            align-self: center;
+        }
+
+        #one {
+            background-color: goldenrod;
+        }
+
+        #two {
+            background-color: darksalmon;
+        }
+
+        #three {
+            background-color: cadetblue;
+        }
+
+        #four {
+            background-color: aquamarine;
+        }
+
+        #five {
+            background-color: plum;
+        }
+
+        @media screen and (max-width: 768px){
+            .content{
+                width: 768px;
+                height: 850px;
+            }
+
+            .box{
+                width: 300px;
+                height: 300px;
+            }
+
+            .box#five{
+                width: 300px;
+                height: 100px; 
+            }
+        
+        @media screen and (max-width: 767px){
+            .content{
+                width: 500px;
+                height: 850px;
+                flex-direction: column;
+            }
+
+            .box{
+                width: 100px;
+                height: 100px;
+            }
+
+            .box#five{
+                width: 100px;
+                height: 100px; 
+            }
+        }
+
+    
+    </style>
+
+    </head>
+
+    <body>
+        <div class="content">
+            <div class="box" id="one">1</div>
+            <div class="box" id="two">2</div>
+            <div class="box" id="three">3</div>
+            <div class="box" id="four">4</div>
+            <div class="box" id="five">5</div>
+                
+        </div>
+
+
+    </body>
+    </html>
+
